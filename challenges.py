@@ -9,7 +9,7 @@ def digits_count(user_input):
     return no_of_digits
 
 user_input = int(input("Enter a Natural Number: "))
-print("No. of digits in user_input are:",digits_count(user_input))
+print("No. of digits in user_input "+str(user_input)+" are:",digits_count(user_input))
 
 # Challenge 2:  Write a function that takes a natural number as input and outputs the reverse of that number.
 # Conversion of number to string is not allowed
@@ -66,7 +66,9 @@ def country_capital(list1,list2):
 
 list1 = ["India" , "England", "Spain"]
 list2 = ["Delhi","London","Madrid"]
-print(country_capital(list1,list2))
+print(list1)
+print(list2)
+print("The countries with capital dictionary for given above lists is ",country_capital(list1,list2))
 
 # Challenge 5: Given places = {(“19.07'53.2”, “72.54'51.0”): "Mumbai",(“28.33'34.1”, “77.06'16.6”): "Delhi"}
 # Write code to create a new dictionary using given dictionary
@@ -83,7 +85,8 @@ def places_lon_lat(places):
     return new_places
 
 places = {("19.07'53.2","72.54'51.0"): "Mumbai",("28.33'34.1", "77.06'16.6"): "Delhi"}
-print(places_lon_lat(places))
+print(places)
+print("Dictionary in required format is ",places_lon_lat(places))
 
 # Challnege 6 : Given mylist  =  [3, 5 ,4 , 6, 9, 10 , 2 , 8, 7 ,1]
 # Using for loop find the sum of all even numbers in mylist
@@ -96,4 +99,5 @@ def sum_even_nos(mylist):
     return sum_even
 
 mylist  =  [3, 5 ,4 , 6, 9, 10 , 2 , 8, 7 ,1]
-print(sum_even_nos(mylist))
+print(mylist)
+print("The sum of all even numbers in given above list is ",sum_even_nos(mylist))
